@@ -1,0 +1,59 @@
+@media (max-width:900px) {
+    .img2Box{
+        display: grid;
+        place-content: center;
+        place-items: center;
+    }
+   
+}
+@media (min-width:900px) {
+    .img2Box{
+        display: flex;
+        justify-content: space-between;
+    }
+    .img2,.img2Text{
+        width: 50%;
+    }
+    .img2Box{
+        display: flex;
+        place-content: center;
+        place-content: center;
+    }
+    .dagImgBox1,.dagImgBox2{
+        text-align: center;
+        width: 50%;
+        height: auto;
+        padding: 4px;
+        background: cover;
+overflow: hidden;
+    }
+    .dagImgBox1 img,.dagImgBox2 img{
+width: 500px;
+height: 400px;
+    }
+    .dagImgBox1 img:hover{
+        transition: 2s ease-in-out;
+    transform: scale(.9);
+    }
+
+    .dagImg2{
+        text-align: center;
+        display: flex;
+    }
+}
+
+
+.dagImgBox1,.dagImgBox2{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-bottom: 60px;
+}
+
+.dagImg2{
+    gap: 20px;
+}
+.dagImgBox1{
+    
+    border-radius: 10px;
+    box-shadow: 1px 2px 3px 4px rgba(0, 0, 0, 0.299);
+}

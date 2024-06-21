@@ -1,0 +1,43 @@
+.box1{
+background: linear-gradient(to Right,rgb(69, 175, 202),rgb(14, 94, 126));
+}
+
+@media (min-width:800px) {
+    #box1{
+        display: flex;
+    }
+    .contactText{
+        width: 70%; 
+        margin-right: 5%;
+    }
+    .wApp{
+        display: flex;
+    }
+    .wApp div{
+        width: 50%;
+    }
+    .location{
+        display: flex;
+    }
+    .location div{
+        width: 50%;
+        margin-right: 10px;
+    }
+}
+.wBtn:hover{
+   animation: leftToRight 2s linear infinite;
+}
+@keyframes leftToRight {
+    from { 
+background: linear-gradient(to Right,rgb(65, 7, 65),rgb(142, 21, 166));
+    }
+    to{
+    
+background: linear-gradient(to Right,purple,rgb(50, 5, 53));    
+    }
+    
+}
+
+.wApp div{
+margin: 20px;
+}
