@@ -51,9 +51,53 @@ height: 400px;
 
 .dagImg2{
     gap: 20px;
+    
 }
 .dagImgBox1{
     
     border-radius: 10px;
     box-shadow: 1px 2px 3px 4px rgba(0, 0, 0, 0.299);
 }
+
+
+@media (max-width:900px) {
+ 
+.flex-box{
+place-content: center;
+place-items: center;
+}   
+.flex-box div{
+    margin: 10px;
+    height: auto;
+    padding: 10px;
+    border: 1px solid black;
+}
+}
+@media (min-width:900px) {
+  .flex-box{
+    text-align: center;
+    justify-content: space-between;    
+  }
+    .flex-box div{
+        display: inline-block;
+        width: 45%;
+        height: 400px;
+        margin: 20px 20px 4px  20px;
+        border: 1px solid black;
+
+    }   
+    }
+    .flex-box div{
+        overflow: hidden;
+    }
+    .flex-box div .img-box{
+        transition: 1.2s;
+        transition-duration: linear;
+    }
+    .flex-box div .img-box:hover{
+transform:scale(1.3)
+    }
+
+    header{
+        z-index: 99 !important;
+    }
